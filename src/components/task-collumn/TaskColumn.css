@@ -1,0 +1,33 @@
+.task-column-heading {
+  display: flex;
+  align-items: center;
+}
+
+.task-column-icon {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.ontime-task {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.overdue-task {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e24935;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}

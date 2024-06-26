@@ -9,6 +9,13 @@
   padding: 20px 8%;
 }
 
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
 .task-column {
   width: 33.33%;
   margin: 20px;

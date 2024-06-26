@@ -1,0 +1,135 @@
+.task-card {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.task-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.task-details {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.task-date {
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.task-card-bottom-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-delete {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.task-delete:hover {
+  background-color: #ebebeb;
+}
+
+.delete-icon {
+  width: 20px;
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.task-delete:hover .delete-icon {
+  opacity: 80%;
+}
+.task-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.task-menu {
+  width: 35px;
+  /* height: 35px; */
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-icon {
+  color: black;
+  width: 20px;
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-container {
+  margin-top: 75px;
+  margin-right: 65px;
+  background-color: hwb(0 96% 3% / 0.767);
+  padding: 10px 7px;
+  width: 120px;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1000;
+  list-style-type: none;
+}
+
+.menu-container li {
+  padding: 5px;
+}
+
+.menu-container li:hover {
+  background-color: #f5f0f0;
+}
+
+.status {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin: 7px 0px 10px 0px;
+}
+
+.status.new {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.status.ongoing {
+  background-color: #ff8800;
+  color: #fff;
+}
+
+.status.done {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.overdue {
+  border-radius: 12px;
+  padding: 2px 8px;
+  background-color: #fcdddd;
+  color: #ee0a0a;
+}

@@ -1,35 +1,32 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./TaskForm.css";
 
-const AddTask = ({ onAddTaskSuccess, onClose }) => {
+const AddTask = ({ onAddTaskSuccess, onClose, id }) => {
   const [taskData, setTaskData] = useState({
+    id,
     task: "",
     description: "",
     dueDate: "",
-    status: "todo",
+    status: "new",
     tags: [],
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(taskData);
+  const handleSubmit = () => {
     onAddTaskSuccess((prev) => {
       return [...prev, taskData];
     });
     setTaskData({
+      id: id + 1,
       task: "",
       description: "",
       dueDate: "",
-      status: "todo",
+      status: "new",
       tags: [],
     });
   };
 
-  console.log("ffffffffffffffffffff");
-
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setTaskData((prev) => {
       return { ...prev, [name]: value };
     });
