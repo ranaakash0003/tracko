@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import TaskColumn from "../task-collumn/TaskColumn";
-import todoIcon from "../../assets/direct-hit.png";
-import doingIcon from "../../assets/glowing-star.png";
-import doneIcon from "../../assets/check-mark-button.png";
+import TaskColumn from "./components/task-collumn/TaskColumn";
+import todoIcon from "../assets/direct-hit.png";
+import doingIcon from "../assets/glowing-star.png";
+import doneIcon from "../assets/check-mark-button.png";
 
 const oldTasks = localStorage.getItem("tasks");
 

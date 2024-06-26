@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import "./TaskCard.css";
-import deleteIcon from "../../assets/delete.png";
-import contextMenuIcon from "../../assets/context-menu.png";
+import deleteIcon from "../../../assets/delete.png";
+import contextMenuIcon from "../../../assets/context-menu.png";
 
 const TaskCard = ({ taskDetails, handleDelete, moveTask }) => {
   const [isMoveTask, setIsMoveTask] = useState(false);
